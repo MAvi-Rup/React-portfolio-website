@@ -6,7 +6,7 @@ import React from 'react';
 const About = () => {
     return (
         <div className='py-9 md:px-8'>
-            <h1 className='text-4xl text-center font-bold text-primary py-7'>About Me</h1>
+            <h1 className='text-4xl text-center font-bold text-primary py-7'>My Skill</h1>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-4'>
                 <div>
                     <div class="card bg-base-100 shadow-xl  bg-neutral">

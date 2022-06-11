@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll/modules';
 import './style.css'
 
 const Navbar = () => {
@@ -11,18 +12,18 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabindex="0" class="bg-neutral menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Projects</a></li>
-                            <li><a>Education</a></li>
-                            <li><a>Contact</a></li>
+                            <li><Link to='projects' smooth={true} duration={1000}>Projects</Link></li>
+                            <li><Link to='education' smooth={true} duration={1000}>Education</Link></li>
+                            <li><Link to='contacts' smooth={true} duration={1000}>Contact</Link></li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost normal-case text-xl">Avirup Mondol</a>
                 </div>
                 <div class="navbar-end hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a>Projects</a></li>
-                        <li><a>Education</a></li>
-                        <li><a>Contact</a></li>
+                    <li><Link to='projects' smooth={true} duration={1000}>Projects</Link></li>
+                    <li><Link to='education' smooth={true} duration={1000}>Education</Link></li>
+                    <li><Link to='contacts' smooth={true} duration={1000}>Contact</Link></li>
                     </ul>
                 </div>
             </div>

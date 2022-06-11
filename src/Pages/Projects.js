@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Projects = () => {
     return (
-        <div className='py-9 md:px-8'>
+        <div id='projects' className='py-9 md:px-8'>
             <h1 className='text-4xl text-center font-bold text-primary py-7'>Projects</h1>
             <div className='grid md:grid-cols-3 grid-cols-1 gap-4'>
                 <div class="card bg-base-100  bg-neutral shadow-xl">

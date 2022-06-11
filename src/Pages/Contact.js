@@ -11,15 +11,15 @@ const Contact = () => {
       emailjs.sendForm('service_e6v2y0y', 'template_l2muyhh', form.current, 'IpoeNfMVvxMb42Fv0')
         .then((result) => {
             toast(result.text);
-            reset()
+            e.target.reset()
         }, (error) => {
             toast.error(error.text);
-            reset()
+            e.target.reset()
         });
     };
    
     return (
-        <div className='py-9 md:px-8'>
+        <div id='contacts' className='py-9 md:px-8'>
             <h1 className='text-xl text-center font-bold text-accent'>Get in Touch</h1>
             <h1 className='text-4xl text-center font-bold text-primary pb-7'>Contact Me</h1>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-6'>
